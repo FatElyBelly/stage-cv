@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Elias Helfand</title>
+</head>
+
+<body>
+
+    <div class="navcontainer">
+        <nav class="navbar">
+            <ul class="navItems">
+                <li><a href="#mainSection" class="navbarLink">Home</a></li>
+                <li><a href="#skillsSection" class="navbarLink">Work</a></li>
+                <li><a href="#personalitySection" class="navbarLink">Personality</a></li>
+                <li><a href="#contact" class="navbarLink">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="pageOverlay" id="pageOverlay"></div>
+
+    <div class="showImage" id="showImage" onclick="closeImage()">
+        <img class="shownImage" id="shownImage" src="images/software.png">
+    </div>
+
+    <div class="showText" id="showText" onclick="closeText()">
+        <p class="shownText" id="shownText"></p>
+    </div>
+
+    <section id="mainSection">
+        <h1>Hello!</h1>
+        <h3>I'm Elias Helfand</h3>
+        <h1 id="homeSlideText"></h1>
+    </section>
+
+    <div class="spacer layer2"></div>
+    <div class="spacer layer1"></div>
+
+    <section id="skillsSection">
+        <h1>Work</h1>
+        <ul class="skillsList" id="skillsList">
+            <li><h1 class="skillsHeader">Skills</h1><button class="skillsBtn" onClick="openConsisteSkills()"><img class="skillsImg"
+                        src="images/software.png"></button></li>
+            <li><h1 class="skillsHeader">Projects</h1><button class="mskillsBtn" onClick="openConditionSkills()"><img class="skillsImg"
+                        src="images/problem-solving.png"></button></li>
+        </ul>
+        <div id="resetScrollAfterSkills"></div>
+        <div class="skillsContent" id="consisteSkills">
+            <div class="skillsContentDiv">
+                <h3>Two tips of the iceberg</h3>
+                <div class="skillsContentDivInnerContent consisteSkillsInnerContent">
+                    <img class="icebergImg" id="icebergImg" onclick="openText('I can work in both tips of the iceberg: frontend and backend. For example, this site is static and I used basic HTML/CSS for the frontend and JavaScript for the backend. ')" src="images/iceberg.png">
+                </div>
+            </div>
+            <div class="skillsContentDiv">
+                <h3>Polyvalence</h3>
+                <div class="skillsContentDivInnerContent consisteSkillsInnerContent">
+                    <img class="skillsContentDivInnerContentImg" onclick="openText('I started programming at the age of 10 when I received a Python book for my birthday. Since then, I learned how to code by watching YouTube, reading forums and books. This way of exploring made my skills expand into various areas, from robotics with Arduino to game development with Unity to web development with Flask, ReactJS and Firebase.')" src="images/mern.png">
+                </div>
+            </div>
+            <div class="skillsContentDiv">
+                <h3>Cycle management</h3>
+                <div class="skillsContentDivInnerContent consisteSkillsInnerContent">
+                    <img class="skillsContentDivInnerContentImg" onclick='openText("As a self-thought programmer, I think it is important to understand how other parts of software development work, this can bring a bigger picture of development and bring different perspectives into play.")'' src="images/cycle.png">
+                </div>
+            </div>
+        </div>
+        <div class="skillsContent" id="conditionSkills">
+            <div class="skillsContentDiv">
+                <h3>Coding</h3>
+                <div class="skillsContentDivInnerContent">
+                    <div class="points">
+                        <div class="line">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('https://youtu.be/Sr-lvVBAFZI', '_blank')" src="images/flutterIcon.png">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('', '_blank')" src="images/unityIcon.png">
+                        </div>
+                        <div class="line">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('https://github.com/FatElyBelly/netflix', '_blank')" src="images/netflixIcon.png">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=834076644452859945&permissions=0&scope=bot%20applications.commands', '_blank')" src="images/discordIcon.png">
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="line">
+                            <img class="skillsContentDivInnerContentImg" onclick="window.open('https://github.com/FatElyBelly/chat-app', '_blank')" src="images/reactIcon.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillsContentDiv">
+                <h3>Other</h3>
+                <div class="skillsContentDivInnerContent">
+                    <div class="points">
+                        <div class="line">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('https://www.lifeschooljakarta.com/semaine-de-la-presse-et-des-medias-du-28-mars-au-4-avril-la-classe-de-seconde-a-mene-un-debat-dans-le-life-speakers-corner-cette-tribune-deloquence-a-ete-installee-dans-la-cour-centrale-du-lycee/', '_blank')" src="images/speakerIcon.png">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('https://www.lifeschooljakarta.com/cianjur-donation/', '_blank')" src="images/perIcon.png">
+                        </div>
+                        <div class="line">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('https://drive.google.com/file/d/1ksjONlqsH3oRk6khpDGBwaTWgAco-txr/view?usp=sharing', '_blank')" src="images/sportsIcon.png">
+                            <img class="skillsContentDivInnerContentImgSmall" onclick="window.open('https://github.com/FatElyBelly/13yo-cv', '_blank')" src="images/cvIcon.png">
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="line">
+                            <img class="skillsContentDivInnerContentImg" onclick="openText('As a middle child with my 2 other siblings, my parents never spoiled me with money to hangout with friends, or to buy anything. This lead to me trying to make money on my own, and my most successful experience was with swing trading on OlympTrade, I traded a lot of actions from the Asia Composite Index, Amazon, Alibaba and EUR/USD OTC.')" src="images/olympIcon.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer spikewave"></div>
+
+    <section id="personalitySection">
+        <h1>Personality</h1>
+        <div class="personalitySectionContent">
+            <img class="personalitySectionContentImg" onclick="openImage('stem')" src="images/stem.png">
+            <img class="personalitySectionContentImg" onclick="window.open('https://www.16personalities.com/profiles/6d342caf879f5', '_blank')" src="images/personalityIcon.png">
+            <img class="personalitySectionContentImg" onclick="openImage('experience')" src="images/experience.png">
+        </div>
+    </section>
+
+    <div class="spacer steps"></div>
+    <div class="spacer belowSteps"></div>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contactDiv">
+            <div class="slides"><img class="contactDivImg" onclick="window.open('https://www.instagram.com/elias.helfand', '_blank')" src="images/instaIcon.png"></div>
+            <div class="slides"><img class="contactDivImg" onclick="copyMail()" src="images/gmailIcon.png"></div>
+            <div class="slides"><img class="contactDivImg" onclick="alert('Scan SnapCode')" src="images/snapIcon.png"></div>
+        </div>
+    </section>
+
+    <div class="spacer lastWave"></div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

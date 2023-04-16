@@ -1,0 +1,10 @@
+intro:
+	bj elias hlf
+      parcours + sujet
+	fait site frontal
+	logiciel quoi
+
+conclusion:
+	qu'est ce que ce sujet a apporte?
+	si je vais faire ce metier
+	experience n shit
