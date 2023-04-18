@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/elybellyclear.ico">
+    <script src="https://kit.fontawesome.com/3265022da9.js" crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet">
     <title>Elias Helfand</title>
 </head>
@@ -134,9 +137,36 @@
     <section id="contact">
         <h1>Contact</h1>
         <div class="contactDiv">
-            <div class="slides"><img class="contactDivImg" onclick="window.open('https://www.instagram.com/elias.helfand', '_blank')" src="images/instaIcon.png"></div>
-            <div class="slides"><img class="contactDivImg" onclick="copyMail()" src="images/gmailIcon.png"></div>
-            <div class="slides"><img class="contactDivImg" onclick="alert('Scan SnapCode')" src="images/snapIcon.png"></div>
+            <div class="contactElement">
+                <button class="contactElementButton gmail" onclick="copyText('helfandelias@gmail.com', 'Email address copied to clipboard: helfandelias@gmail.com')" onmouseover="contactOpen('gmail', 'Copy')" onmouseleave="contactClose('gmail')">
+                    <i style="margin-left: 0.85rem" class="contactElementIcon fa fa-envelope fa-3x"></i>
+                    <p class="contactElementText gmail"></p>
+                </button>
+            </div>
+            <div class="contactElement">
+                <button class="contactElementButton whatsapp" onclick="copyText('+62 877 2888 4212', 'Phone number copied to clipboard: +62 877 2888 4212')" onmouseover="contactOpen('whatsapp', 'Copy')" onmouseleave="contactClose('whatsapp')">
+                    <i style="margin-left: 1rem" class="contactElementIcon fa-brands fa-whatsapp fa-3x"></i>
+                    <p class="contactElementText whatsapp"></p>
+                </button>
+            </div>
+            <div class="contactElement">
+                <button class="contactElementButton instagram" onclick="window.open('https://www.instagram.com/elias.helfand', '_blank')" onmouseover="contactOpen('instagram', 'Open')" onmouseleave="contactClose('instagram')">
+                    <i style="margin-left: 1rem" class="contactElementIcon fa-brands fa-instagram fa-3x"></i>
+                    <p class="contactElementText instagram"></p>
+                </button>
+            </div>
+            <div class="contactElement">
+                <button class="contactElementButton snapchat" onclick="copyText('elybelly07', 'Snap username copied to clipboard: elybelly07')" onmouseover="contactOpen('snapchat', 'Copy')" onmouseleave="contactClose('snapchat')">
+                    <i style="margin-left: 1rem" class="contactElementIcon fa-brands fa-snapchat fa-3x"></i>
+                    <p class="contactElementText snapchat"></p>
+                </button>
+            </div>
+            <div class="contactElement">
+                <button class="contactElementButton discord" onclick="copyText('FatElyBelly#8314', 'Discord username copied to clipboard: FatElyBelly#8314')" onmouseover="contactOpen('discord', 'Copy')" onmouseleave="contactClose('discord')">
+                    <i style="margin-left: 0.6rem" class="contactElementIcon fa-brands fa-discord fa-3x"></i>
+                    <p class="contactElementText discord"></p>
+                </button>
+            </div>
         </div>
     </section>
 

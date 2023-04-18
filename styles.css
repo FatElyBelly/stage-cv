@@ -414,3 +414,65 @@ h3 {
     transform: scale(1.25);
     cursor: pointer;
 }
+
+.contactElement {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contactElementButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #001220;
+    outline: none;
+    border: none;
+    color: white;
+    overflow: hidden;
+    transition-duration: var(--transitionSpeed);
+}
+
+.contactElementButton:hover {
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.contactElementIcon {
+    position: relative;
+}
+
+.contactElementText {
+    position: relative;
+    font-size: 1.5rem;
+    right: 1rem;
+    white-space: nowrap;
+}
+
+button.whatsapp:hover {
+    background-color: #25D366;
+}
+
+button.instagram:hover {
+    background-color: #E1306C;
+}
+
+button.discord:hover {
+    background-color: #7289DA;
+}
+
+button.gmail:hover {
+    background-color: #1AA7EC;
+}
+
+button.snapchat:hover {
+    background-color: #FFFC00;
+}

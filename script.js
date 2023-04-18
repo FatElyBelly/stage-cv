@@ -74,6 +74,7 @@ openText = (text) => {
 }
 
 function TypeWriter(target, text, delay) {
+    target.textContent = ''
 	let _delay = 0
 	for (let i = 0; i < text.length; i++) {
 		_delay += delay
@@ -104,12 +105,12 @@ closeText = () => {
     shownText.textContent = ''
 }
 
-copyMail = () => {
-    navigator.clipboard.writeText("helfandelias@gmail.com").then(() => {
-        alert('Email copied to clipboard');
+copyText = (text, alertText) => {
+    navigator.clipboard.writeText(text).then(() => {
+        alert(alertText);
         /* Resolved - text copied to clipboard successfully */
     },() => {
-        alert('Failed to copy email address: helfandelias@gmail.com');
+        alert('Failed to copy');
         /* Rejected - text failed to copy to the clipboard */
     });
 }
@@ -131,3 +132,17 @@ changeText = () => {
 }
 
 changeText()
+
+// Contact buttons
+
+contactOpen = (className, text) => {
+    textElement = document.getElementsByClassName(className)[1]
+    textElement.display = 'block'
+    textElement.textContent = text
+}
+
+contactClose = (className) => {
+    textElement = document.getElementsByClassName(className)[1]
+    textElement.textContent = ''
+    textElement.display = 'none'
+}
