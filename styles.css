@@ -371,6 +371,21 @@ h3 {
     cursor: pointer;
 }
 
+.colorAnim {
+    border: 5px solid #FFC62F;
+    animation: ColorChange 5s infinite;
+}
+
+.colorAnim:hover {
+    border: 5px solid #FFC62F;
+}
+
+@keyframes ColorChange {
+    25% {border-color: #C62368;};
+    50% {border-color: #25D366;};
+    75% {border-color: #1AA7EC;};
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
